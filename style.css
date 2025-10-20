@@ -339,7 +339,13 @@ section {
     width: 50%;
 }
 .progress-line.react span{
-    width: 70%;
+    width: 75%;
+}
+.progress-line.mongodb span{
+    width: 50%;
+}
+.progress-line.nodejs span{
+    width: 50%;
 }
 .progress-line span::after{
     position: absolute;
@@ -366,7 +372,13 @@ section {
     content: "50%";
 }
 .progress-line.react span::after{
-    content: "70%";
+    content: "75%";
+}
+.progress-line.mongodb span::after{
+    content: "50%";
+}
+.progress-line.nodejs span::after{
+    content: "50%";
 }
 .progress-line span::before{
     content: "";
@@ -498,7 +510,7 @@ section {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    margin-top: 200px;
+    margin-top: 400px;
     
 }
 
@@ -596,6 +608,7 @@ section {
     font-size: 70px;
     line-height: 1;
     text-align: center;
+    padding-bottom: 10%;
 }
 .contact-text h2 span{
     color: #0ef;

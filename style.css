@@ -526,6 +526,12 @@ section {
 .main-text h2 span{
     color: #0ef;
 }
+.main-text h3{
+    font-size: 30px;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 50px;
+}
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

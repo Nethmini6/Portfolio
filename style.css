@@ -393,7 +393,7 @@ section {
     position: relative;
 }
     
-.radial-bars .radial-bars{
+.radial-bars .radial-bar{
     width: 50%;
     height: 170px;
     margin-bottom: 10px;
@@ -464,7 +464,7 @@ section {
 
 
 
-.radial-bars .precentage{
+.radial-bars .percentage{
     position: absolute;
     top: 50%;
     left: 50%;

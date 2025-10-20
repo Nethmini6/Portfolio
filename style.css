@@ -162,10 +162,12 @@ body {
 }
 .about-img img{
     padding-bottom: 20%;
+    padding-top: 20%;
+    padding-left: 15%;
     max-width: 630px;
     height: auto;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 .about-text h2{
     font-size: 60px;

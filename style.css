@@ -510,7 +510,7 @@ section {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    margin-top: 400px;
+    margin-top: 350px;
     
 }
 
@@ -607,7 +607,7 @@ section {
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
-    margin-top: 100px;
+    margin-top: 250px;
     position: relative;
 }
 .contact-text h2{
@@ -795,4 +795,136 @@ box-shadow: 0 0 5px cyan,
         opacity: 1;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ====== Responsive for Tablets ====== */
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr; /* stack about section */
+        text-align: center;
+    }
+    .about-img img {
+        padding: 0;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .home-content h1 {
+        font-size: 42px;
+    }
+    .home-content h3 {
+        font-size: 24px;
+    }
+    .container1 {
+        width: 90%;
+        padding: 50px 20px;
+        margin-left: 0;
+    }
+    .contact {
+        grid-template-columns: 1fr; /* stack contact section */
+        gap: 2rem;
+        padding-left: 0;
+    }
+    .main-text h2 {
+        font-size: 48px;
+    }
+    .main-text h3 {
+        font-size: 24px;
+        padding-top: 50px;
+        padding-left: 0;
+    }
+    .portfolio-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+}
+
+/* ====== Responsive for Mobile Phones ====== */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 32px;
+    }
+    .home-content h3 {
+        font-size: 20px;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .btn-box {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .sub-title {
+        font-size: 36px;
+        padding-bottom: 40px;
+    }
+    .about-text h2 {
+        font-size: 36px;
+    }
+    .about-text h4 {
+        font-size: 22px;
+    }
+    .Technical-bars .bar .info span {
+        font-size: 14px;
+    }
+    .radial-bar svg {
+        width: 100px;
+        height: 100px;
+    }
+    .radial-bar .percentage, .radial-bar .text {
+        font-size: 14px;
+    }
+}
+
+/* ====== Small Mobile Screens ====== */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 26px;
+    }
+    .home-content h3 {
+        font-size: 18px;
+    }
+    .navbar a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .container1 {
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .main-text h2 {
+        font-size: 32px;
+    }
+    .main-text h3 {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    .portfolio-content {
+        grid-template-columns: 1fr; /* one project per row */
+        gap: 10px;
+    }
+    .contact-text h2 {
+        font-size: 40px;
+    }
+    .contact-text h4 {
+        font-size: 18px;
+    }
+    .contact-form form input, .contact-form form textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+    .contact-form form .send {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
 }

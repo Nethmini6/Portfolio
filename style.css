@@ -157,20 +157,26 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    
+
     
 }
 .about-img img{
     padding-bottom: 20%;
     padding-top: 20%;
     padding-left: 15%;
-    max-width: 630px;
+    max-width: 600px;
     height: auto;
     width: 100%;
-    border-radius: 16px;
+    border-radius: 20px;
+}
+.about-text{
+    margin-left: 50px;
 }
 .about-text h2{
     font-size: 60px;
+    
 }
 .about-text h2 span {
     color: #0ef;
@@ -188,6 +194,7 @@ body {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+    margin-right: 15px;
 }
 #services {
     color: aliceblue;
@@ -405,6 +412,7 @@ section {
     height: 170px;
     margin-bottom: 10px;
     position: relative;
+    gap: 1rem;
 }
     
 .radial-bars .radial-bar{
@@ -511,6 +519,9 @@ section {
     justify-content: space-between;
     height: 100vh;
     margin-top: 350px;
+
+   
+    
     
 }
 
@@ -602,8 +613,8 @@ section {
 
 
 .contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /*display: grid;
+    grid-template-columns: repeat(1, 1fr);*/
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
@@ -619,7 +630,7 @@ section {
     line-height: 1;
     text-align: center;
     padding-bottom: 10%;
-    padding-left: 40%;
+    padding-left: 30%;
 }
 .contact-text h2 span{
     color: #0ef;

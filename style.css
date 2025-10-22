@@ -610,11 +610,16 @@ section {
     margin-top: 230px;
     position: relative;
 }
+.contact-text {
+    align-items: center;
+    padding-left: 20%;
+}
 .contact-text h2{
     font-size: 70px;
     line-height: 1;
     text-align: center;
     padding-bottom: 10%;
+    padding-left: 40%;
 }
 .contact-text h2 span{
     color: #0ef;
@@ -678,7 +683,7 @@ section {
 }
 .btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 5px 10px;
   background: #00ffff;
   color: #081b29;
   font-size: 16px;
@@ -687,6 +692,7 @@ section {
   border-radius: 40px;
   box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
   transition: 0.3s;
+
 }
 
 .btn:hover {

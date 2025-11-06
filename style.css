@@ -41,6 +41,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    margin-right: 30px;
     transition: 0.3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;

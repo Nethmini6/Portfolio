@@ -1029,3 +1029,38 @@ box-shadow: 0 0 5px cyan,
         font-size: 14px;
     }
 }
+
+
+
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #0ef;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: #051129;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+}

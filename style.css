@@ -614,6 +614,68 @@ section {
 }
 
 
+
+/* ===== Certificates Section ===== */
+.certificates-section {
+  
+  padding: 100px 0;
+  padding-bottom: 0%;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+  padding-top: 10%;
+  padding-left: 40%;
+  padding-bottom: 5%;
+}
+
+.section-title span {
+  color: #00e6ff; /* matching the blue accent in My Skills */
+}
+
+/* ===== Certificate Cards ===== */
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 50px;
+}
+
+.certificate-item {
+  background: #0b2c3a;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 230, 255, 0.3);
+}
+
+
+.certificate-item h3 {
+  font-size: 1.1rem;
+  color: #00e6ff;
+  margin-top: 5px;
+}
+.certificate-item h5 {
+    color: whitesmoke;
+}
+
+
+
+
+
+
 .contact{
     /*display: grid;
     grid-template-columns: repeat(1, 1fr);*/
@@ -622,7 +684,7 @@ section {
     padding-left: 30px;
     margin-top: 230px;
     position: relative;
-    padding-top: 5%;
+    padding-top: 0%;
 }
 .contact-text {
     align-items: center;

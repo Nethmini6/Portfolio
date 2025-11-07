@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -275,11 +275,15 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
-.container1 {
-    width: 600px;
+/*.container1 {
+    /*width: 600px;
     height: 500px;
     padding: 75px 90px;
     margin-left: 120px;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
    
 }
 .heading1{
@@ -287,13 +291,26 @@ section {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.Technical-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 .bar{
     font-size: 23px;
 }
 .Technical-bars .bar {
-    margin: 40px 0;
+    /*margin: 40px 0;
+    flex: 1 1 45%;
+    background: #112e42;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #0ef3;
+    transition: transform 0.3s;
 }
 .Technical-bars .bar:first-child {
     margin-top: 0;
@@ -508,27 +525,321 @@ section {
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
+}*/
+
+/* ========== TECHNICAL SKILLS ========== */
+.container1 {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding-top: 0;
 }
 
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 30px;
+  padding-top: 0%;
+}
+
+.Technical-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bar {
+  font-size: 23px;
+}
+
+.Technical-bars .bar {
+  flex: 1 1 45%;
+  background: #112e42;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #0ef3;
+  transition: transform 0.3s;
+}
+
+.Technical-bars .bar:hover {
+  transform: translateY(-5px);
+}
+
+.Technical-bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.Technical-bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-line.html span { width: 90%; }
+.progress-line.css span { width: 60%; }
+.progress-line.javascript span { width: 70%; }
+.progress-line.python span { width: 50%; }
+.progress-line.react span { width: 75%; }
+.progress-line.mongodb span { width: 50%; }
+.progress-line.nodejs span { width: 50%; }
+
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.progress-line.html span::after { content: "90%"; }
+.progress-line.css span::after { content: "60%"; }
+.progress-line.javascript span::after { content: "70%"; }
+.progress-line.python span::after { content: "50%"; }
+.progress-line.react span::after { content: "75%"; }
+.progress-line.mongodb span::after { content: "50%"; }
+.progress-line.nodejs span::after { content: "50%"; }
+
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ========== PROFESSIONAL SKILLS (RADIAL BARS) ========== */
+.radial-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 30px;
+  margin-bottom: 40px; /* controls spacing before the next section */
+  padding-bottom: 0;
+}
+
+.radial-bar {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+}
+
+.radial-bar svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 140px;
+  height: 140px;
+}
+
+.progress-bar {
+  stroke-width: 10;
+  stroke: #000;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+.path {
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1 { animation: animate-path1 1s 1s linear forwards; }
+.path-2 { animation: animate-path2 1s 1s linear forwards; }
+.path-3 { animation: animate-path3 1s 1s linear forwards; }
+.path-4 { animation: animate-path4 1s 1s linear forwards; }
+
+@keyframes animate-bar {
+  100% { stroke-dashoffset: -1; }
+}
+@keyframes animate-path1 { 100% { stroke-dashoffset: 50; } }
+@keyframes animate-path2 { 100% { stroke-dashoffset: 175; } }
+@keyframes animate-path3 { 100% { stroke-dashoffset: 125; } }
+@keyframes animate-path4 { 100% { stroke-dashoffset: 75; } }
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.radial-bar .text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  color: #ededed;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+/* ========== RESPONSIVE FIXES ========== */
+@media (max-width: 992px) {
+  .Technical-bars .bar {
+    flex: 1 1 100%;
+  }
+
+  .Technical-bars {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    padding: 0 10px;
+  }
+
+  .heading1 {
+    font-size: 22px;
+  }
+
+  .Technical-bars .bar {
+    flex: 1 1 100%;
+    padding: 15px;
+  }
+
+  .Technical-bars .info span {
+    font-size: 15px;
+  }
+
+  /* PROFESSIONAL SKILLS FIX */
+  .radial-bars {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .radial-bar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .radial-bar svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .radial-bar .percentage {
+    font-size: 16px;
+  }
+
+  .radial-bar .text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading1 {
+    font-size: 20px;
+  }
+
+  .Technical-bars .bar {
+    padding: 10px;
+  }
+
+  .radial-bar {
+    width: 130px;
+    height: 130px;
+  }
+
+  .radial-bar svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .radial-bar .text {
+    font-size: 13px;
+  }
+
+  .radial-bar .percentage {
+    font-size: 14px;
+  }
+}
+
+
 .project {
-               /* Make it take 90% of the page width */
-   /* max-width: 1200px;      Prevent it from stretching too wide */
-    margin: 0 auto;         /* Centers the entire section horizontally */
+    margin: 0 auto;         
     text-align: center;
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    margin-top: 350px;
-    
-
-   
-    
+    margin-top: 0px;
+       
     
 }
 
 .main-text{
-    
+    padding-top: 0%;
     margin-top: 130px;
 }
 .main-text h2{
@@ -615,7 +926,7 @@ section {
 
 
 
-/* ===== Certificates Section ===== */
+
 .certificates-section {
   
   padding: 100px 0;
@@ -635,10 +946,10 @@ section {
 }
 
 .section-title span {
-  color: #00e6ff; /* matching the blue accent in My Skills */
+  color: #00e6ff;
 }
 
-/* ===== Certificate Cards ===== */
+
 .certificate-container {
   display: flex;
   flex-wrap: wrap;
@@ -677,8 +988,7 @@ section {
 
 
 .contact{
-    /*display: grid;
-    grid-template-columns: repeat(1, 1fr);*/
+   
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
@@ -695,7 +1005,7 @@ section {
     line-height: 1;
     text-align: center;
     padding-bottom: 10%;
-    padding-left: 30%;
+    padding-left: 50%;
 }
 .contact-text h2 span{
     color: #0ef;
@@ -809,10 +1119,10 @@ section {
     0 0 25px #0ef;
     width: 80px;
     text-align: center;
-    width: auto; /* ✅ Let padding define width */
-    display: flex; /* ✅ Flex centers content */
+    width: auto; /* 
+    display: flex; /* 
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 .contact-form form .send:hover{
 box-shadow: 0 0 5px cyan,
@@ -908,7 +1218,7 @@ box-shadow: 0 0 5px cyan,
 
 
 
-/* ====== Responsive for Tablets ====== */
+/* ====== Responsive for Tablets ======*/
 @media (max-width: 1024px) {
     .about {
         grid-template-columns: 1fr; /* stack about section */
@@ -1033,34 +1343,3 @@ box-shadow: 0 0 5px cyan,
 
 
 
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  color: #0ef;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    background: #051129;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    text-align: center;
-  }
-
-  .navbar a {
-    margin: 15px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-}
